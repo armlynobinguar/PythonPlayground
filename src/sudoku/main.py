@@ -1,4 +1,8 @@
-from sudoku.game.game import SudokuGame
+from game import SudokuGame
+
+
+
+
 
 def main():
     # Example Sudoku puzzle (0 represents an empty cell)

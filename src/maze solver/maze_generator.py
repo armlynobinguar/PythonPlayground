@@ -1,4 +1,5 @@
-import random
+from maze.player import MazePlayer
+
 
 def generate_maze(difficulty="easy"):
     # Implement maze generation logic based on difficulty

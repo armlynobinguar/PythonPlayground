@@ -1,5 +1,5 @@
 from board import SudokuBoard
-from .player import SudokuPlayer
+from sudoku.player import SudokuPlayer  # Update the import statement
 
 
 class SudokuGame:

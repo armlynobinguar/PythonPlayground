@@ -1,5 +1,6 @@
 from board import SudokuBoard
-from player import SudokuPlayer
+from .player import SudokuPlayer
+
 
 class SudokuGame:
     def __init__(self, initial_board):

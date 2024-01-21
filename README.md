@@ -24,9 +24,7 @@ Explore a variety of Python projects and games, each designed to sharpen your co
 | **Simon Says**           | Repeat the sequence of colors or sounds. 🔘           | 🔘     | `src/simon_says`           |
 | **Tower of Hanoi**       | Solve the classic puzzle. 🔘                          | 🔘     | `src/tower_of_hanoi`       |
 | **Trivia Quiz**          | Create a quiz game with multiple-choice questions. 🔘 | 🔘     | `src/trivia_quiz`          |
-| **Upcoming**             | Tic-Tac-Toe with AI Opponent 🔜                     | 🔜     | `src/upcoming_tic_tac_toe`|
-| **Upcoming**             | [Your Next Project] 🔜                                | 🔜     | `src/upcoming_next`        |
-| **Upcoming**             | [Another Upcoming Project] 🔜                        | 🔜     | `src/upcoming_another`     |
+
 
 ## Get Started
 

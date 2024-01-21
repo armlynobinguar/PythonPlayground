@@ -1,7 +1,8 @@
 # maze_solver/game.py
 import pygame
 from pygame.locals import QUIT, KEYDOWN, K_UP, K_DOWN, K_LEFT, K_RIGHT
-from .player import MazePlayer
+from maze.player import MazePlayer
+
 from .maze_generator import generate_maze, generate_start_end_positions
 from .animation import draw_maze, draw_players
 

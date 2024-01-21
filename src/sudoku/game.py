@@ -1,6 +1,4 @@
-from board import SudokuBoard
-from sudoku.player import SudokuPlayer  # Update the import statement
-
+from .board import SudokuBoard  # Update the import statement
 
 class SudokuGame:
     def __init__(self, initial_board):

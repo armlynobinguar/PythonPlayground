@@ -1,4 +1,4 @@
-from game.game import SudokuGame
+from sudoku.game.game import SudokuGame
 
 def main():
     # Example Sudoku puzzle (0 represents an empty cell)
@@ -19,3 +19,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

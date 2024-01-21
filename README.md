@@ -24,3 +24,12 @@ The project is organized into different modules within the `src` directory.
 
    ```bash
    cd src/fizzbuzz
+
+2. Navigate to the sudoku directory:
+
+   ```bash
+   cd src/sudoku
+
+
+Feel free to copy and paste this content into your `README.md` file.
+

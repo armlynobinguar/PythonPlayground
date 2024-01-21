@@ -1,6 +1,6 @@
 class SudokuBoard:
     def __init__(self, initial_board):
-        self.board = initial_board
+        self.board = [row[:] for row in initial_board]  # Create a deep copy of the initial board
 
     def print_board(self):
         for row in self.board:

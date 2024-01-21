@@ -1,31 +1,46 @@
-# Python Playground Projects
+# Python Playground
 
-🚀 Welcome to the Python Playground—a dynamic space of interactive Python projects and games!
+Explore a variety of Python projects and games, each designed to sharpen your coding skills:
 
-Explore a variety of coding challenges and classic games:
+| Project                  | Description                                           | Status | Directory                  |
+|--------------------------|-------------------------------------------------------|--------|----------------------------|
+| **Tic-Tac-Toe**          | Classic 3x3 grid game. 🟡                              | 🔘     | `src/tic_tac_toe`          |
+| **Hangman**              | Guess the word before the stick figure appears. 🟡    | 🔘     | `src/hangman`              |
+| **Maze Solver**          | Dynamically create and solve mazes. ✅                | ✅     | `src/maze_solver`          |
+| **Connect Four**         | Connect four discs in a row. 🔘                        | 🔘     | `src/connect_four`         |
+| **Snake Game**           | Control a growing snake. 🔘                            | 🔘     | `src/snake_game`           |
+| **Memory Puzzle**        | Match pairs of hidden cards. 🔘                       | 🔘     | `src/memory_puzzle`        |
+| **Pong**                 | Classic Pong with paddles and a bouncing ball. 🔘      | 🔘     | `src/pong`                 |
+| **Battleship**           | Classic board game against the computer. 🔘           | 🔘     | `src/battleship`           |
+| **2048**                 | Combine matching numbers to reach 2048. 🔘            | 🔘     | `src/2048`                 |
+| **Sokoban**              | Push boxes to designated locations. 🔘                | 🔘     | `src/sokoban`              |
+| **Mastermind**           | Break the code by guessing the combination. 🔘        | 🔘     | `src/mastermind`           |
+| **Crossword Generator**  | Create and solve puzzles. 🔘                          | 🔘     | `src/crossword_generator`  |
+| **Flappy Bird Clone**    | Simplified version of the popular game. ✅            | ✅     | `src/flappy_bird_clone`    |
+| **Breakout**             | Break bricks with a bouncing ball. 🔘                 | 🔘     | `src/breakout`             |
+| **Chess**                | Implement a chess game with basic AI. 🔘              | 🔘     | `src/chess`                |
+| **Word Search Generator**| Create and solve word searches. 🔘                   | 🔘     | `src/word_search_generator`|
+| **Galaga Clone**         | Simplified version of the classic arcade game. 🔘     | 🔘     | `src/galaga_clone`         |
+| **Simon Says**           | Repeat the sequence of colors or sounds. 🔘           | 🔘     | `src/simon_says`           |
+| **Tower of Hanoi**       | Solve the classic puzzle. 🔘                          | 🔘     | `src/tower_of_hanoi`       |
+| **Trivia Quiz**          | Create a quiz game with multiple-choice questions. 🔘 | 🔘     | `src/trivia_quiz`          |
+| **Upcoming**             | Tic-Tac-Toe with AI Opponent 🔜                     | 🔜     | `src/upcoming_tic_tac_toe`|
+| **Upcoming**             | [Your Next Project] 🔜                                | 🔜     | `src/upcoming_next`        |
+| **Upcoming**             | [Another Upcoming Project] 🔜                        | 🔜     | `src/upcoming_another`     |
 
-- **Tic-Tac-Toe:** Classic two-player game on a 3x3 grid. 🟡
-- **Hangman:** Guess the word before the stick figure is drawn. 🟡
-- **Maze Solver:** Create and solve mazes programmatically. ✅
-- **Connect Four:** Connect four of your color discs in a row. 🔘
-- **Snake Game:** Control a snake to eat food and grow. 🔘
-- **Memory Puzzle:** Match pairs of hidden cards. 🔘
-- **Pong:** Classic Pong game with paddles and a bouncing ball. 🔘
-- **Battleship:** Implement the classic board game against the computer. 🔘
-- **2048:** Combine matching numbers to reach 2048. 🔘
-- **Sokoban:** Push boxes to designated locations in a warehouse. 🔘
-- **Mastermind:** Break the code by guessing the correct combination. 🔘
-- **Crossword Puzzle Generator:** Create and solve crossword puzzles. 🔘
-- **Flappy Bird Clone:** Create a simplified version of the popular game. ✅
-- **Breakout:** Break the bricks with a bouncing ball and paddle. 🔘
-- **Chess:** Implement a chess game with basic AI opponents. 🔘
-- **Word Search Generator:** Generate and solve word search puzzles. 🔘
-- **Galaga Clone:** Build a simplified version of the classic arcade game. 🔘
-- **Simon Says:** Repeat the sequence of colors or sounds. 🔘
-- **Tower of Hanoi:** Solve the classic puzzle with recursive moves. 🔘
-- **Trivia Quiz:** Create a quiz game with multiple-choice questions. 🔘
-- **Upcoming Project:** Tic-Tac-Toe with AI Opponent 🔜
-- **Upcoming Project:** [Your Next Project] 🔜
+## Get Started
+
+1. Choose a project.
+2. Navigate to the corresponding directory in the `src` folder.
+3. Open `main.py` to explore and run the Python code.
+
+
+## Feedback
+
+Share your feedback or report issues by [opening an issue](https://github.com/your-username/python-playground/issues).
+
+Stay tuned for more coding adventures and challenges! 🚀🐍
+
 - **Upcoming Project:** [Another Upcoming Project] 🔜
 
 ## Legends

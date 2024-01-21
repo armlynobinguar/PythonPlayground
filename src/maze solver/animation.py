@@ -1,4 +1,5 @@
-from .player import MazePlayer
+from maze.player import MazePlayer
+
 
 
 def draw_maze(screen, maze):

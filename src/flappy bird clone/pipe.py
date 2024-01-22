@@ -5,7 +5,10 @@ class Pipe(pygame.sprite.Sprite):
     def __init__(self, width, height, is_top=True):
         super().__init__()
         self.image = pygame.Surface((50, height))
+        
+        # Updated color of the pipes to WHITE
         self.image.fill((255, 255, 255))
+        
         self.rect = self.image.get_rect()
         if is_top:
             self.rect.topleft = (width, 0)

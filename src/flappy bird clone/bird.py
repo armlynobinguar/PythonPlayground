@@ -4,7 +4,10 @@ class Bird(pygame.sprite.Sprite):
     def __init__(self, width, height):
         super().__init__()
         self.image = pygame.Surface((50, 50))
-        self.image.fill((255, 255, 255))
+        
+        # Updated color of the bird to YELLOW
+        self.image.fill((255, 255, 0))
+        
         self.rect = self.image.get_rect(center=(width // 4, height // 2))
         self.velocity = 0
 

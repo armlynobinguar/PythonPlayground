@@ -4,7 +4,7 @@ Explore a variety of Python projects and games, each designed to sharpen your co
 
 | Project                  | Description                                           | Status | Directory                  |
 |--------------------------|-------------------------------------------------------|--------|----------------------------|
-| **Tic-Tac-Toe**          | Classic 3x3 grid game. 🟡                              | 🔘     | `src/tic_tac_toe`          |
+| **Tic-Tac-Toe**          | Classic 3x3 grid game. ✅                             | ✅      | `src/tic_tac_toe`          |
 | **Hangman**              | Guess the word before the stick figure appears. 🟡    | 🔘     | `src/hangman`              |
 | **Maze Solver**          | Dynamically create and solve mazes. ✅                | ✅     | `src/maze_solver`          |
 | **Connect Four**         | Connect four discs in a row. 🔘                        | 🔘     | `src/connect_four`         |

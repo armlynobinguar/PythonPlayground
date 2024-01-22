@@ -1,4 +1,5 @@
-from maze.game import MazeGame
+from .game import MazeGame
+
 
 def main():
     maze_game = MazeGame()

@@ -1,4 +1,5 @@
-from maze.player import MazePlayer
+from .player import MazePlayer
+
 
 
 def generate_maze(difficulty="easy"):

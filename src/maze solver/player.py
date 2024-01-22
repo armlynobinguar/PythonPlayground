@@ -1,4 +1,5 @@
-from maze_solver.player import MazePlayer
+from .player import MazePlayer
+
 from maze_solver.game import MazeGame
 
 # Usage example

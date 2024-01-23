@@ -1,4 +1,5 @@
-from linear_algebra_solver.linear_algebra_solver import LinearAlgebraSolver
+from linear_algebra_solver01.linear_algebra_solver import LinearAlgebraSolver
+
 
 if __name__ == "__main__":
     # Example usage

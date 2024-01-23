@@ -25,6 +25,27 @@ Explore a variety of Python projects and games, each designed to sharpen your co
 | **Tower of Hanoi**       | Solve the classic puzzle. 🔘                          | 🔘     | `src/tower_of_hanoi`       |
 | **Trivia Quiz**          | Create a quiz game with multiple-choice questions. 🔘 | 🔘     | `src/trivia_quiz`          |
 
+## Linear Algebra Playground
+
+Explore linear algebra concepts and solve systems of equations:
+
+| Topic                       | Description                                           | Status | Directory                  |
+|-----------------------------|-------------------------------------------------------|--------|----------------------------|
+| **Introduction to Linear Algebra** | Basics of linear algebra and its applications. 🔜 | 🔜     | `linear_algebra/introduction` |
+| **Systems of Linear Equations** | Solving systems of linear equations. 🔜 | 🔜     | `linear_algebra/systems_of_equations` |
+| **Matrices and Operations** | Introduction to matrices and basic operations. 🔜 | 🔜     | `linear_algebra/matrices` |
+| **Determinants**            | Understanding determinants and their properties. 🔜 | 🔜     | `linear_algebra/determinants` |
+| **Eigenvalues and Eigenvectors** | Concepts of eigenvalues and eigenvectors. 🔜 | 🔜     | `linear_algebra/eigenvalues` |
+
+## Statistics Playground
+
+Explore statistics concepts and data analysis:
+
+| Topic                       | Description                                           | Status | Directory                  |
+|-----------------------------|-------------------------------------------------------|--------|----------------------------|
+| **Introduction to Statistics** | Overview of statistics and its importance. 🔜 | 🔜     | `statistics/introduction` |
+| **Descriptive Statistics**   | Measures of central tendency and dispersion. 🔜 | 🔜     | `statistics/descriptive_statistics` |
+| **Probability**             | Basics of probability theory. 🔜 | 🔜     | `statistics/probability
 
 ## Get Started
 

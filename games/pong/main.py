@@ -1,24 +1,23 @@
 import pygame
+from game import Game
 from paddle import Paddle
 
-
 def main():
+    pygame.init()
+
     game = Game()
-    paddle = Paddle(50, game.height // 2 - 40)
+    paddle = Paddle(300, 160)  # Adjust the initial position as needed
 
     while game.running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 game.running = False
 
-        keys = pygame.key.get_pressed()
-        if keys[pygame.K_UP]:
-            paddle.rect.y -= 5
-        if keys[pygame.K_DOWN]:
-            paddle.rect.y += 5
+        # Update logic for the paddle, e.g., paddle.move(), etc.
+        # Draw the paddle
+        paddle.draw(game.screen)
 
         game.screen.fill((0, 0, 0))
-        paddle.draw(game.screen)
         pygame.display.flip()
         game.clock.tick(60)
 

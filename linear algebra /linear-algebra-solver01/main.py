@@ -1,21 +1,19 @@
-from linear_algebra_solver import LinearAlgebraSolver
-
-def main():
-    # Example usage
-    coefficients = np.array([[2, 1], [1, -1]])
-    constants = np.array([8, -1])
-
-    # Solve a system of linear equations
-    solution = LinearAlgebraSolver.solve_system(coefficients, constants)
-    print(f'Solution: {solution}')
-
-    # Compute determinant
-    determinant = LinearAlgebraSolver.compute_determinant(coefficients)
-    print(f'Determinant: {determinant}')
-
-    # Compute inverse
-    inverse_matrix = LinearAlgebraSolver.compute_inverse(coefficients)
-    print(f'Inverse Matrix:\n{inverse_matrix}')
+from linear_algebra_solver.linear_algebra_solver import LinearAlgebraSolver
 
 if __name__ == "__main__":
-    main()
+    # Example usage
+    solver = LinearAlgebraSolver()
+
+    # Example system of linear equations:
+    # 2x + y = 8
+    # 3x - 2y = -11
+    coefficients = [[2, 1], [3, -2]]
+    constants = [8, -11]
+
+    # Solve the system
+    solution = solver.solve_linear_system(coefficients, constants)
+
+    if solution is not None:
+        print("Solution:")
+        print("x =", solution[0])
+        print("y =", solution[1])

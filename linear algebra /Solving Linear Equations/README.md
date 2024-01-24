@@ -5,7 +5,7 @@ Explore a variety of Python projects and games related to linear algebra, each d
 ## Resources
 
 - [MIT OpenCourseWare - Linear Algebra](https://math.mit.edu/~gs/everyone/): Explore MIT's Linear Algebra course materials.
-- [NumPy : the most used Python library in Data Science - Python]([https://math.mit.edu/~gs/everyone/](https://datascientest.com/en/numpy-the-python-library-in-data-science)
+- [NumPy : the most used Python library in Data Science - Python]([https://math.mit.edu/~gs/everyone/](https://datascientest.com/en/numpy-the-python-library-in-data-science/)
 
 ## Project Structure
 

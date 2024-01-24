@@ -5,9 +5,9 @@ Explore a variety of Python projects focused on graphing linear equations using 
 ## Resources
 
 - [MIT OpenCourseWare - Linear Algebra](https://math.mit.edu/~gs/everyone/): Explore MIT's Linear Algebra course materials.
-- [Visualization with Matplotlib]([https://datascientest.com/en/numpy-the-python-library-in-data-science](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html))
-- [Matplotlib: Master Data Visualization in Python]([https://realpython.com/numpy-tutorial/](https://datascientest.com/en/matplotlib-master-data-visualization-in-python))
-- [Data Visualization with Matplotlib – a Step by Step Guide]([https://www.w3schools.com/python/numpy/numpy_intro.asp](https://www.freecodecamp.org/news/introduction-to-data-vizualization-using-matplotlib/#:~:text=Matplotlib%20is%20a%20popular%20Python,%2C%20histograms%2C%20and%20bar%20charts.)https://www.freecodecamp.org/news/introduction-to-data-vizualization-using-matplotlib/#:~:text=Matplotlib%20is%20a%20popular%20Python,%2C%20histograms%2C%20and%20bar%20charts.)
+- [Visualization with Matplotlib]([https://datascientest.com/en/numpy-the-python-library-in-data-science](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html/)
+- [Matplotlib: Master Data Visualization in Python]([https://realpython.com/numpy-tutorial/](https://datascientest.com/en/matplotlib-master-data-visualization-in-python/)
+- [Data Visualization with Matplotlib – a Step by Step Guide]([https://www.w3schools.com/python/numpy/numpy_intro.asp](https://www.freecodecamp.org/news/introduction-to-data-vizualization-using-matplotlib/#:~:text=Matplotlib%20is%20a%20popular%20Python,%2C%20histograms%2C%20and%20bar%20charts.)https://www.freecodecamp.org/news/introduction-to-data-vizualization-using-matplotlib/#:~:text=Matplotlib%20is%20a%20popular%20Python,%2C%20histograms%2C%20and%20bar%20charts/)
 - [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
 
 

@@ -1,3 +1,4 @@
+# matrix_operations.py
 import numpy as np
 
 def create_identity_matrix(size):
@@ -78,3 +79,5 @@ def extract_submatrix(matrix, row_indices, col_indices):
         numpy.ndarray: Submatrix extracted from the original matrix.
     """
     return matrix[row_indices][:, col_indices]
+
+# Add other matrix operations functions here...

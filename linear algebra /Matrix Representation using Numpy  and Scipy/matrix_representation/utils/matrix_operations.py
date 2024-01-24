@@ -1,114 +1,80 @@
 import numpy as np
 
-def create_matrix(rows, cols, values):
+def create_identity_matrix(size):
     """
-    Create a matrix with specified values.
+    Create an identity matrix of given size.
 
     Args:
-        rows (int): Number of rows in the matrix.
-        cols (int): Number of columns in the matrix.
-        values (list): List of lists containing the matrix elements.
+        size (int): Size of the identity matrix.
 
     Returns:
-        numpy.ndarray: Created matrix.
+        numpy.ndarray: Identity matrix.
     """
-    return np.array(values)
+    return np.eye(size)
 
-def matrix_properties(matrix):
+def scalar_multiply_matrix(matrix, scalar):
     """
-    Get properties of a matrix.
+    Multiply a matrix by a scalar.
 
     Args:
         matrix (numpy.ndarray): Input matrix.
+        scalar (float): Scalar value.
 
     Returns:
-        dict: Dictionary containing matrix properties.
+        numpy.ndarray: Resultant matrix after scalar multiplication.
     """
-    properties = {
-        "Shape": matrix.shape,
-        "Rank": np.linalg.matrix_rank(matrix),
-        "Determinant": np.linalg.det(matrix),
-        "Inverse Exists": np.linalg.matrix_rank(matrix) == matrix.shape[0] == matrix.shape[1],
-        "Transpose": matrix.T
-    }
-    return properties
+    return scalar * matrix
 
-def inverse_matrix(matrix):
+def elementwise_multiply_matrices(matrix1, matrix2):
     """
-    Compute the inverse of a matrix.
+    Multiply two matrices element-wise.
+
+    Args:
+        matrix1 (numpy.ndarray): First matrix.
+        matrix2 (numpy.ndarray): Second matrix.
+
+    Returns:
+        numpy.ndarray: Resultant matrix after element-wise multiplication.
+    """
+    return np.multiply(matrix1, matrix2)
+
+def matrix_power(matrix, power):
+    """
+    Raise a matrix to a specified power.
 
     Args:
         matrix (numpy.ndarray): Input matrix.
+        power (int): Power to which the matrix is raised.
 
     Returns:
-        numpy.ndarray: Inverse matrix.
+        numpy.ndarray: Resultant matrix after raising to the power.
     """
-    if np.linalg.matrix_rank(matrix) == matrix.shape[0] == matrix.shape[1]:
-        return np.linalg.inv(matrix)
-    else:
-        raise ValueError("Matrix is singular or not square; cannot compute the inverse.")
+    return np.linalg.matrix_power(matrix, power)
 
-def transpose_matrix(matrix):
+def concatenate_matrices(matrix1, matrix2, axis=0):
     """
-    Compute the transpose of a matrix.
+    Concatenate two matrices along a specified axis.
+
+    Args:
+        matrix1 (numpy.ndarray): First matrix.
+        matrix2 (numpy.ndarray): Second matrix.
+        axis (int, optional): Axis along which matrices are concatenated (default is 0).
+
+    Returns:
+        numpy.ndarray: Concatenated matrix.
+    """
+    return np.concatenate((matrix1, matrix2), axis=axis)
+
+def extract_submatrix(matrix, row_indices, col_indices):
+    """
+    Extract a submatrix from the given matrix.
 
     Args:
         matrix (numpy.ndarray): Input matrix.
+        row_indices (list): List of row indices to extract.
+        col_indices (list): List of column indices to extract.
 
     Returns:
-        numpy.ndarray: Transposed matrix.
+        numpy.ndarray: Submatrix extracted from the original matrix.
     """
-    return matrix.T
-
-def matrix_determinant(matrix):
-    """
-    Compute the determinant of a matrix.
-
-    Args:
-        matrix (numpy.ndarray): Input matrix.
-
-    Returns:
-        float: Determinant of the matrix.
-    """
-    return np.linalg.det(matrix)
-
-def matrix_rank(matrix):
-    """
-    Compute the rank of a matrix.
-
-    Args:
-        matrix (numpy.ndarray): Input matrix.
-
-    Returns:
-        int: Rank of the matrix.
-    """
-    return np.linalg.matrix_rank(matrix)
-
-def solve_linear_system(coefficients, constants):
-    """
-    Solve a system of linear equations.
-
-    Args:
-        coefficients (numpy.ndarray): Coefficients matrix.
-        constants (numpy.ndarray): Constants vector.
-
-    Returns:
-        numpy.ndarray: Solution vector.
-    """
-    return np.linalg.solve(coefficients, constants)
-
-def diagonalize_matrix(matrix):
-    """
-    Diagonalize a matrix.
-
-    Args:
-        matrix (numpy.ndarray): Input matrix.
-
-    Returns:
-        numpy.ndarray: Diagonalized matrix.
-        numpy.ndarray: Diagonal matrix.
-    """
-    eigenvalues, eigenvectors = np.linalg.eig(matrix)
-    diagonal_matrix = np.diag(eigenvalues)
-    diagonalized_matrix = np.dot(np.dot(np.linalg.inv(eigenvectors), matrix), eigenvectors)
-    return diagonalized_matrix, diagonal_matrix
+    return matrix[row_indices][:, col_indices]

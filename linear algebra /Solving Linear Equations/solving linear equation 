@@ -1,0 +1,58 @@
+import numpy as np
+
+# Example 1: Solving a simple linear equation: 3x - 4 = 5
+def solve_simple_linear_equation():
+    A = 3
+    B = 0
+    C = -4 + 5
+    x = solve_linear_equation(A, B, C)[0]
+    print(f"Example 1: x = {x}")
+
+# Example 2: Solving a linear equation with variables on both sides: 2x + 3 = x + 7
+def solve_linear_equation_variables_on_sides():
+    A = 2 - 1
+    B = -1
+    C = 7 - 3
+    x = solve_linear_equation(A, B, C)[0]
+    print(f"Example 2: x = {x}")
+
+# Example 3: Solving a system of linear equations:
+# 2x + y = 8
+# 3x - 2y = -11
+def solve_linear_system():
+    coefficients = [[2, 1], [3, -2]]
+    constants = [8, -11]
+    solution = solve_linear_system(coefficients, constants)
+    print(f"Example 3: Solution = {solution}")
+
+# Example 4: Solving a linear equation with fractions: (1/2)x - 3 = 2
+def solve_linear_equation_with_fractions():
+    A = 1 / 2
+    B = 0
+    C = -3 + 2
+    x = solve_linear_equation(A, B, C)[0]
+    print(f"Example 4: x = {x}")
+
+# Example 5: Solving a linear equation with decimal coefficients: 0.5x + 1.5 = 4
+def solve_linear_equation_with_decimals():
+    A = 0.5
+    B = 0
+    C = 1.5 - 4
+    x = solve_linear_equation(A, B, C)[0]
+    print(f"Example 5: x = {x}")
+
+# Example 6: Solving a linear equation with negative coefficients: -2x - 5 = -3
+def solve_linear_equation_negative_coefficients():
+    A = -2
+    B = 0
+    C = -5 + 3
+    x = solve_linear_equation(A, B, C)[0]
+    print(f"Example 6: x = {x}")
+
+if __name__ == "__main__":
+    solve_simple_linear_equation()
+    solve_linear_equation_variables_on_sides()
+    solve_linear_system()
+    solve_linear_equation_with_fractions()
+    solve_linear_equation_with_decimals()
+    solve_linear_equation_negative_coefficients()

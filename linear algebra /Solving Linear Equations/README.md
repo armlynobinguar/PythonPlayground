@@ -5,16 +5,14 @@ Explore a variety of Python projects and games related to linear algebra, each d
 ## Resources
 
 - [MIT OpenCourseWare - Linear Algebra](https://math.mit.edu/~gs/everyone/): Explore MIT's Linear Algebra course materials.
-
-
-
+- [NumPy : the most used Python library in Data Science - Python]([https://math.mit.edu/~gs/everyone/](https://datascientest.com/en/numpy-the-python-library-in-data-science))
 
 ## Project Structure
 
 | Project Directory                        | Description                                             | Status |
 | ---------------------------------------- | ------------------------------------------------------- | ------ |
 | **linear_algebra/**                      | Main folder for linear algebra projects.                | ✅     |
-| --- **linear_equations/**                | Subfolder for linear equation projects.                 | ✅     |
+| --- **linear_equations/**                | Subfolder for linear equation projects using NumPy.     | ✅     |
 | ------ **simple_linear_equations.py**    | Solving basic linear equations (Ax + By = C).           | ✅     |
 | ------ **equations_with_constants.py**   | Handling equations with constants on both sides.        | ✅     |
 | ------ **equations_with_fractions.py**   | Solving equations with fractional coefficients.         | ✅     |
@@ -46,6 +44,4 @@ Contributions are welcome! If you have ideas, improvements, or want to add a new
 
 ## Feedback
 
-If you have any feedback, suggestions, or issues, feel free to [open an issue](https://github.com/your-username/python-playground/issues) or [contact us](mailto:your-email@example.com).
-
-Stay tuned for more coding adventures and exciting challenges! Your next coding journey is just a click away. 🚀🐍
+If you have any feedback, suggestions, or issues, feel free to [open an issue](https://github.com/your-username/python-playground/issues

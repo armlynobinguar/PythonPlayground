@@ -1,33 +1,114 @@
 import numpy as np
 
-def add_matrices(matrix1, matrix2):
+def create_matrix(rows, cols, values):
     """
-    Add two matrices.
+    Create a matrix with specified values.
 
     Args:
-        matrix1 (numpy.ndarray): First matrix.
-        matrix2 (numpy.ndarray): Second matrix.
+        rows (int): Number of rows in the matrix.
+        cols (int): Number of columns in the matrix.
+        values (list): List of lists containing the matrix elements.
 
     Returns:
-        numpy.ndarray or None: Resultant matrix after addition if matrices are compatible, None otherwise.
+        numpy.ndarray: Created matrix.
     """
-    if matrix1.shape != matrix2.shape:
-        print("Error: Matrices must have the same shape for addition.")
-        return None
-    return np.add(matrix1, matrix2)
+    return np.array(values)
 
-def multiply_matrices(matrix1, matrix2):
+def matrix_properties(matrix):
     """
-    Multiply two matrices.
+    Get properties of a matrix.
 
     Args:
-        matrix1 (numpy.ndarray): First matrix.
-        matrix2 (numpy.ndarray): Second matrix.
+        matrix (numpy.ndarray): Input matrix.
 
     Returns:
-        numpy.ndarray or None: Resultant matrix after multiplication if matrices are compatible, None otherwise.
+        dict: Dictionary containing matrix properties.
     """
-    if matrix1.shape[1] != matrix2.shape[0]:
-        print("Error: Number of columns in the first matrix must be equal to the number of rows in the second matrix for multiplication.")
-        return None
-    return np.dot(matrix1, matrix2)
+    properties = {
+        "Shape": matrix.shape,
+        "Rank": np.linalg.matrix_rank(matrix),
+        "Determinant": np.linalg.det(matrix),
+        "Inverse Exists": np.linalg.matrix_rank(matrix) == matrix.shape[0] == matrix.shape[1],
+        "Transpose": matrix.T
+    }
+    return properties
+
+def inverse_matrix(matrix):
+    """
+    Compute the inverse of a matrix.
+
+    Args:
+        matrix (numpy.ndarray): Input matrix.
+
+    Returns:
+        numpy.ndarray: Inverse matrix.
+    """
+    if np.linalg.matrix_rank(matrix) == matrix.shape[0] == matrix.shape[1]:
+        return np.linalg.inv(matrix)
+    else:
+        raise ValueError("Matrix is singular or not square; cannot compute the inverse.")
+
+def transpose_matrix(matrix):
+    """
+    Compute the transpose of a matrix.
+
+    Args:
+        matrix (numpy.ndarray): Input matrix.
+
+    Returns:
+        numpy.ndarray: Transposed matrix.
+    """
+    return matrix.T
+
+def matrix_determinant(matrix):
+    """
+    Compute the determinant of a matrix.
+
+    Args:
+        matrix (numpy.ndarray): Input matrix.
+
+    Returns:
+        float: Determinant of the matrix.
+    """
+    return np.linalg.det(matrix)
+
+def matrix_rank(matrix):
+    """
+    Compute the rank of a matrix.
+
+    Args:
+        matrix (numpy.ndarray): Input matrix.
+
+    Returns:
+        int: Rank of the matrix.
+    """
+    return np.linalg.matrix_rank(matrix)
+
+def solve_linear_system(coefficients, constants):
+    """
+    Solve a system of linear equations.
+
+    Args:
+        coefficients (numpy.ndarray): Coefficients matrix.
+        constants (numpy.ndarray): Constants vector.
+
+    Returns:
+        numpy.ndarray: Solution vector.
+    """
+    return np.linalg.solve(coefficients, constants)
+
+def diagonalize_matrix(matrix):
+    """
+    Diagonalize a matrix.
+
+    Args:
+        matrix (numpy.ndarray): Input matrix.
+
+    Returns:
+        numpy.ndarray: Diagonalized matrix.
+        numpy.ndarray: Diagonal matrix.
+    """
+    eigenvalues, eigenvectors = np.linalg.eig(matrix)
+    diagonal_matrix = np.diag(eigenvalues)
+    diagonalized_matrix = np.dot(np.dot(np.linalg.inv(eigenvectors), matrix), eigenvectors)
+    return diagonalized_matrix, diagonal_matrix

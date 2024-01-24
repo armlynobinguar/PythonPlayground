@@ -3,13 +3,12 @@ import matplotlib.pyplot as plt
 from utils.linear_equation_plotter import plot_piecewise_linear_functions
 
 # Example usage
-segments = [([-10, -5], 2, 5), ([-5, 0], -1, 2), ([0, 5], 3, -1)]
-
-# Extract slopes and intercepts from segments
-slopes, intercepts = zip(*[(slope, intercept) for _, slope, intercept in segments])
+x_ranges = [(-10, -5), (-5, 0), (0, 5)]
+slopes = [2, -1, 3]
+intercepts = [5, 2, -1]
 
 # Plot piecewise linear functions
-plot_piecewise_linear_functions(slopes, intercepts)
+plot_piecewise_linear_functions(x_ranges, slopes, intercepts)
 plt.legend()
 plt.xlabel('x')
 plt.ylabel('y')

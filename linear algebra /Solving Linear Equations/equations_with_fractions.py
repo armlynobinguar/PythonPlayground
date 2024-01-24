@@ -1,85 +1,47 @@
-import numpy as np
+# equations_with_fractions.py
+"""
+Solving equations with fractional coefficients.
+"""
 
-# Linear Equation Lesson and Code
+from fractions import Fraction
 
-def lesson():
-    print("Linear Equations Lesson:")
-    print("A linear equation is an equation of the form Ax + By = C, where A, B, and C are constants.")
-    print("The solution to a linear equation is the set of values (x, y) that satisfies the equation.")
+def solve_equation_with_fractions(A, B, C):
+    """
+    Solve an equation with fractional coefficients: Ax/2 + By/3 = C/4.
 
-def solve_linear_equation(A, B, C):
+    Args:
+        A (Fraction): Coefficient of x.
+        B (Fraction): Coefficient of y.
+        C (Fraction): Constant term.
+
+    Returns:
+        tuple or None: (x, y) if a solution exists, None otherwise.
+    """
     try:
-        # Check for division by zero
-        if A == 0 and B == 0:
-            raise ZeroDivisionError("Error: Both coefficients A and B cannot be zero.")
-
-        # Solve for x and y
-        x = (C - B) / A if A != 0 else None
-        y = (C - A) / B if B != 0 else None
+        x = (C - B) / A
+        y = (C - A) / B
         return x, y
-
-    except ZeroDivisionError as e:
-        print(str(e))
+    except ZeroDivisionError:
+        print("Error: Division by zero. The coefficients A and B cannot be zero.")
         return None
 
-def solve_simple_linear_equation():
-    A = 3
-    B = 0
-    C = -4 + 5
-    solution = solve_linear_equation(A, B, C)
-    if solution:
-        x = solution[0]
-        print(f"Example 1: x = {x}")
+def solve_equation_with_fractions_example():
+    """
+    Example usage of solving an equation with fractional coefficients.
+    """
+    # Example: x/2 + y/3 = 4/5
+    A = Fraction(1, 2)
+    B = Fraction(1, 3)
+    C = Fraction(4, 5)
 
-def solve_one_variable_equation():
-    # Example 2: Solving a linear equation with one variable: 2x - 7 = 3
-    A = 2
-    B = 0
-    C = -7 + 3
-    solution = solve_linear_equation(A, B, C)
-    if solution:
-        x = solution[0]
-        print(f"Example 2: x = {x}")
+    # Solve the equation
+    solution = solve_equation_with_fractions(A, B, C)
 
-def solve_two_variable_equation():
-    # Example 3: Solving a linear equation with two variables: 3x - 2y = 7
-    A = 3
-    B = -2
-    C = 7
-    solution = solve_linear_equation(A, B, C)
     if solution:
         x, y = solution
-        print(f"Example 3: x = {x}, y = {y}")
-
-def solve_equation_with_constants():
-    # Example 4: Solving a linear equation with constants on both sides: 4x + 2 = 2x + 6
-    A = 2
-    B = -2
-    C = 6 - 2
-    solution = solve_linear_equation(A, B, C)
-    if solution:
-        x = solution[0]
-        print(f"Example 4: x = {x}")
+        print("Solution:")
+        print("x =", x)
+        print("y =", y)
 
 if __name__ == "__main__":
-    # Example usage
-    lesson()
-
-    # Example linear equation: 2x + 3y = 12
-    A = 2
-    B = 3
-    C = 12
-
-    # Solve the linear equation
-    solution = solve_linear_equation(A, B, C)
-
-    if solution:
-        print("\nSolution:")
-        print("x =", solution[0])
-        print("y =", solution[1])
-
-    # Other examples
-    solve_simple_linear_equation()
-    solve_one_variable_equation()
-    solve_two_variable_equation()
-    solve_equation_with_constants()
+    solve_equation_with_fractions_example()

@@ -40,3 +40,5 @@ def plot_piecewise_linear_functions(x_ranges, slopes, intercepts):
         x = np.linspace(x_ranges[i][0], x_ranges[i][1], 100)
         y = slopes[i] * x + intercepts[i]
         plt.plot(x, y, label=f'Piece {i + 1}: y = {slopes[i]}x + {intercepts[i]}')
+
+# Add other plotting functions if needed

@@ -1,6 +1,13 @@
-# Linear Algebra Playground
+# Linear Algebra
 
-Explore a variety of Python projects and lessons related to linear algebra. Each project is designed to help you understand and apply concepts in linear equations.
+Explore a variety of Python projects and games related to linear algebra, each designed to sharpen your coding skills.
+
+## Resources
+
+- [MIT OpenCourseWare - Linear Algebra](https://math.mit.edu/~gs/everyone/): Explore MIT's Linear Algebra course materials.
+
+...
+
 
 ## Project Structure
 

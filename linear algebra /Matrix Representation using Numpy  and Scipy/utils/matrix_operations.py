@@ -9,8 +9,11 @@ def add_matrices(matrix1, matrix2):
         matrix2 (numpy.ndarray): Second matrix.
 
     Returns:
-        numpy.ndarray: Resultant matrix after addition.
+        numpy.ndarray or None: Resultant matrix after addition if matrices are compatible, None otherwise.
     """
+    if matrix1.shape != matrix2.shape:
+        print("Error: Matrices must have the same shape for addition.")
+        return None
     return np.add(matrix1, matrix2)
 
 def multiply_matrices(matrix1, matrix2):
@@ -22,6 +25,9 @@ def multiply_matrices(matrix1, matrix2):
         matrix2 (numpy.ndarray): Second matrix.
 
     Returns:
-        numpy.ndarray: Resultant matrix after multiplication.
+        numpy.ndarray or None: Resultant matrix after multiplication if matrices are compatible, None otherwise.
     """
+    if matrix1.shape[1] != matrix2.shape[0]:
+        print("Error: Number of columns in the first matrix must be equal to the number of rows in the second matrix for multiplication.")
+        return None
     return np.dot(matrix1, matrix2)

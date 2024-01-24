@@ -1,47 +1,59 @@
 import numpy as np
 
-class LinearEquationSolver:
-    def solve_linear_system(self, coefficients, constants):
-        """
-        Solve a system of linear equations using numpy's linear algebra solver.
+# Linear Equation Lesson and Code (Google Colab)
 
-        Args:
-            coefficients (ndarray): Coefficients matrix (2D array).
-            constants (ndarray): Constants vector (1D array).
+def lesson():
+    print("Linear Equations Lesson:")
+    print("A linear equation is an equation of the form Ax + By = C, where A, B, and C are constants.")
+    print("The solution to a linear equation is the set of values (x, y) that satisfies the equation.")
+    print("\nCreating a Linear Equation:")
+    print("You can create a linear equation in the form Ax + By = C.")
+    print("For example, the equation 2x - 3y = 5 can be represented as:")
+    print("A = 2, B = -3, C = 5\n")
 
-        Returns:
-            solution (ndarray): Solution vector.
-        """
-        try:
-            # Step 1: Convert input to numpy arrays
-            A = np.array(coefficients)
-            B = np.array(constants)
+def create_linear_equation(A, B, C):
+    return f"{A}x + {B}y = {C}"
 
-            # Step 2: Use numpy's linear algebra solver to find the solution
-            solution = np.linalg.solve(A, B)
+def solve_linear_equation(A, B, C):
+    try:
+        # Solve for x and y
+        x = (C - B) / A
+        y = (C - A) / B
+        return x, y
+    except ZeroDivisionError:
+        print("Error: Division by zero. The coefficients A and B cannot be zero.")
 
-            return solution
-
-        except np.linalg.LinAlgError:
-            # Handle the case where the system is singular or not solvable
-            print("The system of equations is singular or not solvable.")
-            return None
-
+def print_example_equations():
+    print("\nAdditional Examples of Linear Equations:")
+    examples = [
+        (3, 4, 15),  # 3x + 4y = 15
+        (-2, 5, 8),  # -2x + 5y = 8
+        (1, -1, 0),  # x - y = 0
+    ]
+    for example in examples:
+        equation = create_linear_equation(*example)
+        print(f"{equation}")
 
 if __name__ == "__main__":
     # Example usage
-    solver = LinearEquationSolver()
+    lesson()
 
-    # Example system of linear equations:
-    # 2x + y = 8
-    # 3x - 2y = -11
-    coefficients = [[2, 1], [3, -2]]
-    constants = [8, -11]
+    # Example linear equation: 2x + 3y = 12
+    A = 2
+    B = 3
+    C = 12
 
-    # Solve the system
-    solution = solver.solve_linear_system(coefficients, constants)
+    # Create a linear equation
+    created_equation = create_linear_equation(A, B, C)
+    print(f"Created Linear Equation: {created_equation}")
 
-    if solution is not None:
-        print("Solution:")
+    # Solve the linear equation
+    solution = solve_linear_equation(A, B, C)
+
+    if solution:
+        print("\nSolution:")
         print("x =", solution[0])
         print("y =", solution[1])
+
+    # Print additional examples
+    print_example_equations()

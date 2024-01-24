@@ -12,7 +12,7 @@ def func(x):
     return np.interp(x, range(matrix.shape[1]), matrix[0, :])
 
 # Compute derivative along the first row
-derivative_values = derivative(func, range(matrix.shape[1]))
+derivative_values = np.array([derivative(func, x0, dx=1e-6) for x0 in range(matrix.shape[1])])
 
 # Display the results
 print("Example Matrix:")

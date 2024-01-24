@@ -6,7 +6,7 @@ Explore a variety of Python projects and games related to linear algebra, each d
 
 - [MIT OpenCourseWare - Linear Algebra](https://math.mit.edu/~gs/everyone/): Explore MIT's Linear Algebra course materials.
 
-...
+
 
 
 ## Project Structure

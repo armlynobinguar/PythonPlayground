@@ -42,3 +42,4 @@ prob_studied = 0.8  # Assume 80% of students studied for the exam
 prob_pass_given_studied = 0.9  # 90% chance of passing if studied
 prob_pass_if_studied = conditional_probability(prob_studied, prob_pass_given_studied)
 print(f"Example 5: Probability of passing an exam given studying: {prob_pass_if_studied:.2f}")
+

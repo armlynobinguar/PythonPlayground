@@ -40,13 +40,6 @@ The project aims to provide a comprehensive set of examples and utilities for ha
 
 Each script in the project is designed to be standalone, demonstrating specific concepts or operations. The `utils` folder contains reusable functions that are imported across various scripts for common operations.
 
-## Usage
-
-To use any script, navigate to its directory and run the script with Python. For example:
-
-```bash
-python matrix_representation/matrix_inverse_example.py
-
 ## Description
 
 This directory contains Python scripts that leverage Matplotlib to graph various types of linear equations. Each module serves a specific purpose, allowing you to visualize different aspects of linear equations.

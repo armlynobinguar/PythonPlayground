@@ -46,3 +46,33 @@ To use any script, navigate to its directory and run the script with Python. For
 
 ```bash
 python matrix_representation/matrix_inverse_example.py
+
+## Description
+
+This directory contains Python scripts that leverage Matplotlib to graph various types of linear equations. Each module serves a specific purpose, allowing you to visualize different aspects of linear equations.
+
+## How to Use
+
+1. Choose a project from the list above.
+2. Navigate to the corresponding directory in the `linear_algebra/graphing_linear_equations` folder.
+3. Open the `main.py` or specific project file to explore and run the Python code.
+
+## Project Status
+
+- ✅: Completed
+
+## Contributions
+
+Contributions are welcome! If you have ideas, improvements, or want to add a new project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/new-project`.
+3. Make your changes and commit them: `git commit -m 'Add new project'`.
+4. Push to the branch: `git push origin feature/new-project`.
+5. Submit a pull request.
+
+## Feedback
+
+If you have any feedback, suggestions, or issues, feel free to [open an issue](https://github.com/your-username/python-playground/issues) or [contact us](mailto:your-email@example.com).
+
+Stay tuned for more coding adventures and exciting challenges! Your next coding journey is just a click away. 🚀🐍

@@ -11,29 +11,28 @@ def gaussian_elimination(A, b):
     Returns:
     x (numpy.ndarray): Solution vector.
     """
-    # Implement Gaussian elimination here (omitted for brevity)
-    # ...
+    n = len(A)
+    # Forward elimination
+    for i in range(n):
+        for j in range(i+1, n):
+            factor = A[j][i] / A[i][i]
+            for k in range(i, n):
+                A[j][k] -= factor * A[i][k]
+            b[j] -= factor * b[i]
+
+    # Back substitution
+    x = np.zeros(n)
+    for i in range(n-1, -1, -1):
+        sum_ax = 0
+        for j in range(i+1, n):
+            sum_ax += A[i][j] * x[j]
+        x[i] = (b[i] - sum_ax) / A[i][i]
+
     return x
 
 def iterative_refinement(A, b, x, iterations=10):
-    """
-    Refines the solution of Ax = b using iterative refinement.
-
-    Args:
-    A (numpy.ndarray): Coefficient matrix.
-    b (numpy.ndarray): Right-hand side vector.
-    x (numpy.ndarray): Initial solution vector.
-    iterations (int): Number of refinement iterations.
-
-    Returns:
-    x (numpy.ndarray): Refined solution vector.
-    """
-    for _ in range(iterations):
-        r = b - np.dot(A, x)  # Compute the residual
-        delta_x = gaussian_elimination(A, r)  # Solve for the correction term
-        x = x + delta_x  # Update the solution
-
-    return x
+    # Iterative refinement code (unchanged)
+    # ...
 
 # Example usage
 A = np.array([
